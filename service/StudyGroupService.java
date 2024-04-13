@@ -5,7 +5,7 @@ import model.*;
 
 public class StudyGroupService {
 
-    public StudyGroup createStudyGroup(String groupName, Teacher teacher1, List<User> students) {
-        return new StudyGroup(groupName, teacher1, students);
+    public StudyGroup createStudyGroup(String groupName, Teacher teacher, List<User> students) {
+        return new StudyGroup(groupName, teacher, students);
     }
 }

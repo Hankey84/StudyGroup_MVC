@@ -11,10 +11,10 @@ public class UserView {
     public void addUser(User user) {
         if (user instanceof Student) {
             controller.addUserList(user);
-            System.out.println("Студент" + user + "добавлен");
+            System.out.println(user + " добавлен");
         } else if (user instanceof Teacher) {
             controller.addUserList(user);
-            System.out.println("Преподователь" + user + "добавлен");
+            System.out.println(user + " добавлен");
         }
     }
 

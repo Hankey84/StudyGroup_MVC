@@ -23,8 +23,8 @@ public class Student extends User{
 
     @Override
     public String toString() {
-        int numbers = ++number2;
-        return "Студент" + numbers + " {" +
+        int ordinalNumber = ++number2;
+        return "Студент" + ordinalNumber + " {" +
                 "имя='" + name + '\'' +
                 ", возраст=" + age +
                 ", ID=" + studentId + "}";
