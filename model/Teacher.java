@@ -20,6 +20,6 @@ public class Teacher extends User{
         return "Преподователь{" +
                 "имя='" + name + '\'' +
                 ", возраст=" + age +
-                ", кураторство=" + disciplesTaught + "}";
+                ", направление='" + disciplesTaught + "'}";
     }
 }

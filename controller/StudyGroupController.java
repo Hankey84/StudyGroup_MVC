@@ -9,7 +9,7 @@ public class StudyGroupController {
     StudyGroupService studyGroupService = new StudyGroupService();
 
 
-    public StudyGroup createStudyGroup(Teacher teacher, List<User> students) {
-        return studyGroupService.createStudyGroup(teacher, students);
+    public StudyGroup createStudyGroup(String groupName, Teacher teacher, List<User> students) {
+        return studyGroupService.createStudyGroup(groupName, teacher, students);
     }
 }

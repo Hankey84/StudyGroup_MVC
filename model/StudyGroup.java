@@ -3,12 +3,18 @@ package model;
 import java.util.List;
 
 public class StudyGroup {
+    private String groupName;
     private Teacher teacher;
     private List<User> students;
 
-    public StudyGroup(Teacher teacher, List<User> students) {
+    public StudyGroup(String groupName, Teacher teacher, List<User> students) {
+        this.groupName = groupName;
         this.teacher = teacher;
         this.students = students;
+    }
+
+    public String getGroupName() {
+        return groupName;
     }
 
     public Teacher getTeacher() {
@@ -29,9 +35,9 @@ public class StudyGroup {
 
     @Override
     public String toString() {
-        return "УчебнаяГруппа{" +
-                "преподаватель=" + teacher +
-                ", студенты=" + students +
+        return "УчебнаяГруппа '" + groupName + "' {" +
+                teacher +
+                ", Cтуденты: " + students +
                 '}';
     }
 }

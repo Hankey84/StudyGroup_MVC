@@ -8,7 +8,7 @@ import model.*;
 public class UserView {
     private Controller controller = new Controller();
 
-    public void UserList(User user) {
+    public void addUser(User user) {
         if (user instanceof Student) {
             controller.addUserList(user);
             System.out.println("Студент" + user + "добавлен");
