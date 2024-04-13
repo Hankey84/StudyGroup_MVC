@@ -1,4 +1,3 @@
-
 package model;
 
 public class Teacher extends User{
@@ -15,5 +14,12 @@ public class Teacher extends User{
 
     public void setDisciplesTaught(String disciplesTaught) {
         this.disciplesTaught = disciplesTaught;
+    }
+
+    public String toString() {
+        return "Преподователь{" +
+                "имя='" + name + '\'' +
+                ", возраст=" + age +
+                ", кураторство=" + disciplesTaught + "}";
     }
 }

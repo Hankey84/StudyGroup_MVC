@@ -1,9 +1,8 @@
-
 package model;
 
 public abstract class User {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public User(String name, int age) {
         this.name = name;
